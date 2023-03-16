@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Symptom Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Symptom Tracker</h1>
+      <form>
+        <label for="mood-select">Mood:</label>
+        <select id="mood-select">
+          <option value="neutral">Neutral</option>
+          <option value="positive">Positive</option>
+          <option value="negative">Negative</option>
+        </select>
+        <label for="energy-range">Energy Level:</label>
+        <input type="range" id="energy-range" min="0" max="100" value="50" />
+        <label for="symptoms-textarea">Symptoms:</label>
+        <textarea
+          id="symptoms-textarea"
+          placeholder="Enter your symptoms/feelings here"
+        ></textarea>
+        <button id="save-button">Save</button>
+      </form>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
